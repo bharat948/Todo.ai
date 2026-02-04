@@ -1,0 +1,32 @@
+{
+  "name": "daily-pilot-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"node ./src/app.js\" \"json-server --watch ./db.json --port 4000 --delay 100\"",
+    "start": "node ./src/app.js",
+    "lint": "eslint . --ext .js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand --detectOpenHandles",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll",
+    "read-project": "node scripts/read-project.js",
+    "topic-summary-debug": "node scripts/topic-summary-debug.js",
+    "seed-topics": "node scripts/seed_topics.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "concurrently": "^8.2.0",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2",
+    "openai": "^6.17.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.6.0",
+    "supertest": "^6.3.4",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.0.0",
+    "json-server": "^0.17.3"
+  }
+}
