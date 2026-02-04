@@ -1,7 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import * as jsonStore from '../store/jsonStore.js';
 import { cosineSimilarity, averageEmbeddings } from '../utils/similarity.js';
-import { cosineSimilarity, averageEmbeddings } from '../utils/similarity.js';
 import { generateTitleAndSummary } from './topicSummarizer.js';
 import { embed } from './embedder.js';
 
