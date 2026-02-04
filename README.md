@@ -1,4 +1,3 @@
-# Daily Pilot Backend — Day 1
 
 ## Quick start
 1. `npm ci`
